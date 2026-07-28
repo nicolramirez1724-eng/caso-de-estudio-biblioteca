@@ -1,5 +1,5 @@
 CREATE TABLE persona (
-	documento varchar(20) PRIMARY KEY,
+	usuarioID varchar(20) PRIMARY KEY,
 	nombre varchar(150) NOT NULL,
 	telefono varchar(30) NOT NULL,
 	direccion varchar (200) NOT NULL,
@@ -26,6 +26,7 @@ CREATE TABLE prestamo (
 	CONSTRAINT isbn_fk
 	FOREIGN KEY (isbn) REFERENCES libro(isbn)
 );
+
 
 
 
